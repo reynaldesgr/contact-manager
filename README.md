@@ -1,5 +1,5 @@
 # ``C# - Project : contact manager``
-<img src="https://i.ibb.co/5KDwgtC/screen-app.png" alt="screen-app" width="100" height="100" border="0">
+<img src="https://i.ibb.co/5KDwgtC/screen-app.png" alt="screen-app" width="500" height="500" border="0">
 
 ## ``Features``
 
