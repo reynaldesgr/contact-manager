@@ -1,6 +1,5 @@
-# ``Contact Manager``
-
-The Contact Manager is a simple application utility for organizing your contacts and directories.
+# ``C# - Project : contact manager``
+<img src="https://i.ibb.co/5KDwgtC/screen-app.png" alt="screen-app" width="100" height="100" border="0">
 
 ## ``Features``
 
