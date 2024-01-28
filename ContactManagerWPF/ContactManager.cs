@@ -7,9 +7,10 @@ namespace ContactManagerWPF
     class ContactManager
     {
         private Folder            root;
-        private Folder            current;
         private DataEntityFactory entityFactory;
         private DataSerializer    serializer;
+
+        private Folder            current { get; set; }
 
         public ContactManager()
         {
