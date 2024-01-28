@@ -1,9 +1,8 @@
-﻿using ContactManagerWPF;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Projet_CSHARP
+namespace ContactManagerWPF
 {
     class ContactManager
     {
