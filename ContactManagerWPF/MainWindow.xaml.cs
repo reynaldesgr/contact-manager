@@ -1,5 +1,4 @@
 ﻿using Microsoft.WindowsAPICodePack.Dialogs;
-using Projet_CSHARP;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
