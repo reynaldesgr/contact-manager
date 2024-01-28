@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder>
+  <Name>root</Name>
+  <CreationDate>28/01/2024 09:28:57</CreationDate>
+  <ModificationDate>28/01/2024 09:28:57</ModificationDate>
+  <SubFolders>
+    <Folder>
+      <Name>desktop</Name>
+      <CreationDate>28/01/2024 09:29:49</CreationDate>
+      <ModificationDate>28/01/2024 09:29:49</ModificationDate>
+      <SubFolders>
+        <Folder>
+          <Name>ZZ1</Name>
+          <CreationDate>28/01/2024 09:33:34</CreationDate>
+          <ModificationDate>28/01/2024 09:33:34</ModificationDate>
+          <SubFolders>
+            <Folder>
+              <Name>labs</Name>
+              <CreationDate>28/01/2024 09:34:18</CreationDate>
+              <ModificationDate>28/01/2024 09:34:18</ModificationDate>
+            </Folder>
+          </SubFolders>
+        </Folder>
+        <Folder>
+          <Name>ZZ2</Name>
+          <CreationDate>28/01/2024 09:33:38</CreationDate>
+          <ModificationDate>28/01/2024 09:33:38</ModificationDate>
+        </Folder>
+        <Folder>
+          <Name>ZZ3</Name>
+          <CreationDate>28/01/2024 09:33:42</CreationDate>
+          <ModificationDate>28/01/2024 09:33:42</ModificationDate>
+        </Folder>
+      </SubFolders>
+    </Folder>
+    <Folder>
+      <Name>images</Name>
+      <CreationDate>28/01/2024 09:29:54</CreationDate>
+      <ModificationDate>28/01/2024 09:29:54</ModificationDate>
+    </Folder>
+    <Folder>
+      <Name>videos</Name>
+      <CreationDate>28/01/2024 09:29:59</CreationDate>
+      <ModificationDate>28/01/2024 09:29:59</ModificationDate>
+      <SubFolders>
+        <Folder>
+          <Name>stuff.mp3</Name>
+          <CreationDate>28/01/2024 09:32:58</CreationDate>
+          <ModificationDate>28/01/2024 09:32:58</ModificationDate>
+        </Folder>
+      </SubFolders>
+    </Folder>
+    <Folder>
+      <Name>work</Name>
+      <CreationDate>28/01/2024 09:30:12</CreationDate>
+      <ModificationDate>28/01/2024 09:30:12</ModificationDate>
+    </Folder>
+    <Folder>
+      <Name>network</Name>
+      <CreationDate>28/01/2024 09:30:33</CreationDate>
+      <ModificationDate>28/01/2024 09:30:33</ModificationDate>
+      <Contacts>
+        <Contact>
+          <LastName>leroy</LastName>
+          <FirstName>mary</FirstName>
+          <Email>test@gmail.com</Email>
+          <Company>FireWorks</Company>
+          <Link>Colleague</Link>
+          <CreationDate>28/01/2024 09:31:59</CreationDate>
+          <ModificationDate>28/01/2024 09:31:59</ModificationDate>
+        </Contact>
+        <Contact>
+          <LastName>morin</LastName>
+          <FirstName>jade</FirstName>
+          <Email>test@gmail.com</Email>
+          <Company>FireWorks</Company>
+          <Link>Relation</Link>
+          <CreationDate>28/01/2024 09:32:38</CreationDate>
+          <ModificationDate>28/01/2024 09:32:38</ModificationDate>
+        </Contact>
+      </Contacts>
+    </Folder>
+    <Folder>
+      <Name>coding</Name>
+      <CreationDate>28/01/2024 09:30:46</CreationDate>
+      <ModificationDate>28/01/2024 09:30:46</ModificationDate>
+    </Folder>
+  </SubFolders>
+</Folder>
