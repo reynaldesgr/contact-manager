@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L5bBA1CKNYtGko0UpPyqDeXTbVe1rWYcDnvNykDvy1Mr5jmBvWg0/gLmvQMI1QBOoUr1oRUSQkBggDgkKGe06Q==",
+  "dgSpecHash": "7PcBIgnszXR6tZcbtuU5QBZE+OKH36Rhvo+/uCxnK4XJzXvEhhzD975L4jXzXY5CpwbCjOuHp+/e3FzeiFoBdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\reyna\\source\\repos\\ContactManagerWPF\\ContactManagerWPF\\ContactManagerWPF.csproj",
+  "projectFilePath": "C:\\Users\\reyna\\Desktop\\projet-c#\\contact-manager\\ContactManagerWPF\\ContactManagerWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reyna\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.0\\microsoft.netcore.platforms.7.0.0.nupkg.sha512",
     "C:\\Users\\reyna\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

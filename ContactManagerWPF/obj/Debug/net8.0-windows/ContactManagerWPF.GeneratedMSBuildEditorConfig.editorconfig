@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ContactManagerWPF
-build_property.ProjectDir = C:\Users\reyna\source\repos\ContactManagerWPF\ContactManagerWPF\
+build_property.ProjectDir = C:\Users\reyna\Desktop\projet-c#\contact-manager\ContactManagerWPF\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

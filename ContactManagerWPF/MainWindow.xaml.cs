@@ -51,6 +51,11 @@ namespace ContactManagerWPF
                 Foreground = Brushes.LightGreen
             };
 
+            if (folderNode.Name.Equals(contactManager.current.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                headerTextBlock.Background = Brushes.DarkBlue;
+                headerTextBlock.Foreground = Brushes.White;
+            }
 
             var treeItem = new TreeViewItem { Header = headerTextBlock };
 
@@ -99,6 +104,7 @@ namespace ContactManagerWPF
             if (inputDialog.ShowDialog() == true)
             {
                 contactManager.SelectCurrentFolder(inputDialog.Answer);
+                DisplayStructure_Click(sender, e);
             }
         }
 

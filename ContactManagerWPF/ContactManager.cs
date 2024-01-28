@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Windows;
 
 namespace ContactManagerWPF
 {
@@ -10,7 +11,7 @@ namespace ContactManagerWPF
         private DataEntityFactory entityFactory;
         private DataSerializer    serializer;
 
-        private Folder            current { get; set; }
+        public  Folder            current { get; set; }
 
         public ContactManager()
         {
@@ -44,18 +45,17 @@ namespace ContactManagerWPF
             Console.WriteLine($"New contact '{firstName} {lastName}' created in '{current.Name}'.");
         }
 
-
         public void SelectCurrentFolder(string folderName)
         {
             Folder selected = FindFolderByName(root, folderName);
+
             if (selected != null)
             {
                 current = selected;
-                Console.WriteLine($"Current folder set to '{folderName}'.");
             }
             else
             {
-                Console.WriteLine($"Folder '{folderName}' not found.");
+                MessageBox.Show($"Folder '{folderName}' not found.", "Folder Not Found", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -132,23 +132,29 @@ namespace ContactManagerWPF
 
         private Folder FindFolderByName(Folder folder, string folderName)
         {
-            if (folder.Name.Equals(folderName, StringComparison.OrdinalIgnoreCase))
+            if (null != folder)
             {
-                return folder;
-            }
-
-            foreach (var subfolder in folder.SubFolders)
-            {
-                var foundFolder = FindFolderByName(subfolder, folderName);
-                if (foundFolder != null)
+                if (folder.Name.Equals(folderName, StringComparison.OrdinalIgnoreCase))
                 {
-                    return foundFolder;
+                    return folder;
+                }
+
+                if (folder.SubFolders != null)
+                {
+                    foreach (var subfolder in folder.SubFolders)
+                    {
+                        var foundFolder = FindFolderByName(subfolder, folderName);
+
+                        if (foundFolder != null)
+                        {
+                            return foundFolder;
+                        }
+                    }
                 }
             }
 
             return null;
         }
-
 
 
         // Tree view

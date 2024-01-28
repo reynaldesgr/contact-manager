@@ -2,7 +2,7 @@
 
 Contact Manager is a C#/.NET-WPF application - it allows you to organize your contacts and directories. 
 
-<img src="https://i.ibb.co/5KDwgtC/screen-app.png" alt="screen-app" border="0">
+<img src="https://i.ibb.co/BcC6vbm/app-screen.png" alt="app-screen">
 
 ## ``Features``
 - **Contact creation**: Create new contacts with detailed information.

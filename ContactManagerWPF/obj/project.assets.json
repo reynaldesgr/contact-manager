@@ -3007,11 +3007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reyna\\source\\repos\\ContactManagerWPF\\ContactManagerWPF\\ContactManagerWPF.csproj",
+      "projectUniqueName": "C:\\Users\\reyna\\Desktop\\projet-c#\\contact-manager\\ContactManagerWPF\\ContactManagerWPF.csproj",
       "projectName": "ContactManagerWPF",
-      "projectPath": "C:\\Users\\reyna\\source\\repos\\ContactManagerWPF\\ContactManagerWPF\\ContactManagerWPF.csproj",
+      "projectPath": "C:\\Users\\reyna\\Desktop\\projet-c#\\contact-manager\\ContactManagerWPF\\ContactManagerWPF.csproj",
       "packagesPath": "C:\\Users\\reyna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reyna\\source\\repos\\ContactManagerWPF\\ContactManagerWPF\\obj\\",
+      "outputPath": "C:\\Users\\reyna\\Desktop\\projet-c#\\contact-manager\\ContactManagerWPF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
