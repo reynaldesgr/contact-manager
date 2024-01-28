@@ -24,7 +24,22 @@ namespace ContactManagerWPF
         {
             structureTreeView.Items.Clear();
             var rootFolder = contactManager.GetStructureTree();
-            structureTreeView.Items.Add(CreateTreeViewItemFromFolderNode(rootFolder));
+            var rootTreeViewItem = CreateTreeViewItemFromFolderNode(rootFolder);
+            structureTreeView.Items.Add(rootTreeViewItem);
+        
+            ExpandAllNodes(rootTreeViewItem);
+        }
+
+        private void ExpandAllNodes(TreeViewItem item) 
+        {
+            item.IsExpanded = true;
+            foreach (var subItem in item.Items)
+            {
+                if (subItem is TreeViewItem subTreeViewItem)
+                {
+                    ExpandAllNodes(subTreeViewItem);
+                }
+            }
         }
 
         private TreeViewItem CreateTreeViewItemFromFolderNode(FolderNode folderNode, string indent="")
