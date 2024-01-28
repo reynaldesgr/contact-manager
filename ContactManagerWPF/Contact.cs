@@ -3,7 +3,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace Projet_CSHARP
+namespace ContactManagerWPF
 {
     [Serializable]
     public class Contact : IXmlSerializable
