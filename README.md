@@ -1,4 +1,4 @@
-# ``C# - Project : contact manager``
+# ``C# / .NET 8 - Project : contact manager``
 
 Contact Manager is a C#/.NET-WPF application - it allows you to organize your contacts and directories. 
 
