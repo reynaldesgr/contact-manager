@@ -14,7 +14,7 @@ Contact Manager is a C#/.NET-WPF (Windows Presentation Foundation) application -
 - Organize contacts within custom folders.
 - Serialize contact information to an ``XML`` file with ``encryption``.
 - Deserialize and load contact information from an ``XML`` file with ``decryption``.
-- Simple and intuitive graphical user interface.
+- Simple ``GUI`` - graphical user interface.
 
 ## ``Usage``
 
