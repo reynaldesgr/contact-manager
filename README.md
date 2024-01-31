@@ -1,13 +1,20 @@
 # ``C# / .NET 8 - Project : contact manager``
 
-Contact Manager is a C#/.NET-WPF application - it allows you to organize your contacts and directories. 
+Contact Manager is a C#/.NET-WPF (Windows Presentation Foundation) application - it allows you to organize your contacts and directories. 
 
-<img src="https://i.ibb.co/BcC6vbm/app-screen.png" alt="app-screen">
+### ``Prerequisites``
+
+- [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) or [.NET Core](https://dotnet.microsoft.com/download) compatible with WPF.
+- Visual Studio or another IDE that supports WPF application development.
+
+<img src="https://i.ibb.co/bNy4vWN/app-screen.png" alt="app-screen" border="0">
 
 ## ``Features``
-- **Contact creation**: Create new contacts with detailed information.
-- **Folder organization**: Organize contacts into folders for better categorization.
-- **Data persistence**: Save and load your contact data to continue where you left off.
+- Create, edit, and delete contacts and folders.
+- Organize contacts within custom folders.
+- Serialize contact information to an ``XML`` file with ``encryption``.
+- Deserialize and load contact information from an ``XML`` file with ``decryption``.
+- Simple and intuitive graphical user interface.
 
 ## ``Usage``
 
