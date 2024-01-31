@@ -75,6 +75,7 @@ namespace ContactManagerWPF
                     {
                         using (StreamReader reader = new StreamReader(cryptoStream))
                         {
+
                             return (T)serializer.Deserialize(reader);
                         }
                     }

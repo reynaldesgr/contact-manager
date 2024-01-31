@@ -136,29 +136,35 @@ namespace ContactManagerWPF
             writer.WriteElementString("ModificationDate", ModificationDate.ToString());
 
             // Write SubFolders
-            if (SubFolders.Count != 0)
+            if (null != SubFolders)
             {
-                writer.WriteStartElement("SubFolders");
-                foreach (var subFolder in SubFolders)
+                if (SubFolders.Count != 0)
                 {
-                    writer.WriteStartElement("Folder");
-                    subFolder.WriteXml(writer);
-                    writer.WriteEndElement();
+                    writer.WriteStartElement("SubFolders");
+                    foreach (var subFolder in SubFolders)
+                    {
+                        writer.WriteStartElement("Folder");
+                        subFolder.WriteXml(writer);
+                        writer.WriteEndElement();
+                    }
+                    writer.WriteEndElement(); // </SubFolders>
                 }
-                writer.WriteEndElement(); // </SubFolders>
             }
 
             // Write Contacts
-           if (Contacts.Count != 0)
+            if (null != Contacts) 
             {
-                writer.WriteStartElement("Contacts");
-                foreach (var contact in Contacts)
+                if (Contacts.Count != 0)
                 {
-                    writer.WriteStartElement("Contact");
-                    contact.WriteXml(writer);
-                    writer.WriteEndElement();
+                    writer.WriteStartElement("Contacts");
+                    foreach (var contact in Contacts)
+                    {
+                        writer.WriteStartElement("Contact");
+                        contact.WriteXml(writer);
+                        writer.WriteEndElement();
+                    }
+                    writer.WriteEndElement(); // </Contacts>
                 }
-                writer.WriteEndElement(); // </Contacts>
             }
         }
     }
