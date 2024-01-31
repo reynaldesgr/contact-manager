@@ -93,7 +93,7 @@ namespace ContactManagerWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ContactManagerWPF;V1.0.0.0;component/contactdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ContactManagerWPF;component/contactdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ContactDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

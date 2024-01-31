@@ -37,6 +37,6 @@
             <Button Content="Select current folder" Click="SelectCurrentFolder_Click"/>
         </StackPanel>
 
-        <TreeView x:Name="structureTreeView" Margin="10" BorderThickness="1" Foreground="White" BorderBrush="#FF3E3E42" Background="#FF252526"/>
+        <TreeView x:Name="structureTreeView" Margin="10" BorderThickness="1" Foreground="White" BorderBrush="#FF3E3E42" Background="#FF252526"></TreeView>
     </DockPanel>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContactManagerWPF"
         mc:Ignorable="d"
-        Title="" Height="200" Width="300"
+        Title="New folder" Height="200" Width="300"
         Background="#FF2D2D30"
         FontFamily="Consolas">
     <StackPanel Margin="20">

@@ -30,3 +30,4 @@ C:\Users\reyna\source\repos\ContactManagerWPF\ContactManagerWPF\obj\Debug\net8.0
 C:\Users\reyna\source\repos\ContactManagerWPF\ContactManagerWPF\obj\Debug\net8.0-windows\ContactDialog.g.cs
 C:\Users\reyna\source\repos\ContactManagerWPF\ContactManagerWPF\obj\Debug\net8.0-windows\ContactDialog.baml
 C:\Users\reyna\source\repos\ContactManagerWPF\ContactManagerWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\reyna\source\repos\ContactManagerWPF\ContactManagerWPF\obj\Debug\net8.0-windows\ContactManagerWPF.sourcelink.json
