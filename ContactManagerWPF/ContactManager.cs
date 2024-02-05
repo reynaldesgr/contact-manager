@@ -4,6 +4,7 @@
 using System.Security.Cryptography;
 using System.Security.Principal;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ContactManagerWPF
 {
@@ -37,15 +38,20 @@ namespace ContactManagerWPF
         /// <param name="name">The name of the new folder.</param>
         public void CreateNewFolder(string name)
         {
-            // Ensure current.SubFolders is not null
             if (current.SubFolders == null)
             {
                 current.SubFolders = new List<Folder>();
             }
 
+            if (current.SubFolders.Any(f => f.Name.Equals(name, StringComparison.OrdinalIgnoreCase)))
+            {
+                MessageBox.Show($"A folder named '{name}' already exists in '{current.Name}'.");
+                return;
+            }
+
             Folder newFolder = entityFactory.CreateFolder(name);
             current.SubFolders.Add(newFolder);
-            Console.WriteLine($"New folder '{name}' created in '{current.Name}'");
+            MessageBox.Show($"New folder '{name}' created in '{current.Name}'");
         }
 
         /// <summary>
@@ -65,7 +71,7 @@ namespace ContactManagerWPF
 
             Contact newContact = entityFactory.CreateContact(lastName, firstName, email, company, link);
             current.Contacts.Add(newContact);
-            Console.WriteLine($"New contact '{firstName} {lastName}' created in '{current.Name}'.");
+            MessageBox.Show($"New contact '{firstName} {lastName}' created in '{current.Name}'.");
         }
 
         /// <summary>
@@ -78,11 +84,11 @@ namespace ContactManagerWPF
             if (selected != null)
             {
                 current = selected;
-                Console.WriteLine($"Current folder set to '{folderName}'.");
+                MessageBox.Show($"Current folder set to '{folderName}'.");
             }
             else
             {
-                Console.WriteLine($"Folder '{folderName}' not found.");
+                MessageBox.Show($"Folder '{folderName}' not found.");
             }
         }
 
@@ -107,7 +113,7 @@ namespace ContactManagerWPF
             }
 
             serializer.SerializeToFile(root, fileName, encryptionKey);
-            Console.WriteLine("Data saved successfully in " + fullPath + ".");
+            MessageBox.Show("Data saved successfully in " + fullPath + ".");
         }
 
         /// <summary>
@@ -141,13 +147,13 @@ namespace ContactManagerWPF
 
                 root = serializer.DeserializeFromFile<Folder>(fileName, decryptionKey);
                 current = root;
-                Console.WriteLine("Data loaded successfully.");
+                MessageBox.Show("Data loaded successfully.");
             }
             else
             {
                 root = entityFactory.CreateFolder("root");
                 current = root;
-                Console.WriteLine("No existing data. Created a new root folder.");
+                MessageBox.Show("No existing data. Created a new root folder.");
             }
         }
 
@@ -158,7 +164,7 @@ namespace ContactManagerWPF
         {
             root = entityFactory.CreateFolder("root");
             current = root;
-            Console.WriteLine("Data unloaded successfully.");
+            MessageBox.Show("Data unloaded successfully.");
         }
 
         /// <summary>
@@ -170,13 +176,13 @@ namespace ContactManagerWPF
         {
             string indent = new string(' ', depth * 4);
 
-            Console.WriteLine($"{indent}[D] - {folder.Name}");
+            // Console.WriteLine($"{indent}[D] - {folder.Name}");
 
             if (folder.Contacts != null)
             {
                 foreach (var contact in folder.Contacts)
                 {
-                    Console.WriteLine($"{indent} | [C] - {contact.FirstName} {contact.LastName} ({contact.Email})");
+                    // Console.WriteLine($"{indent} | [C] - {contact.FirstName} {contact.LastName} ({contact.Email})");
                 }
 
             }
