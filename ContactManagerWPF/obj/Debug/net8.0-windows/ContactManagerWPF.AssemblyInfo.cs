@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ContactManagerWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5e9ec4086e9e7e519e855caf53e1f5c8beb4378")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dabf06db6f5407c19e023f6c6814718bb697d0c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ContactManagerWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ContactManagerWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

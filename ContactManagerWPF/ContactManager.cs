@@ -51,7 +51,6 @@ namespace ContactManagerWPF
 
             Folder newFolder = entityFactory.CreateFolder(name);
             current.SubFolders.Add(newFolder);
-            MessageBox.Show($"New folder '{name}' created in '{current.Name}'");
         }
 
         /// <summary>
@@ -84,7 +83,6 @@ namespace ContactManagerWPF
             if (selected != null)
             {
                 current = selected;
-                MessageBox.Show($"Current folder set to '{folderName}'.");
             }
             else
             {
